@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+
+    <TextView
+      android:id="@+id/EMAILADDRESS2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="26dp"
+      android:layout_marginEnd="47dp"
+      android:text="EMAIL ADDRESS"
+      app:layout_constraintEnd_toStartOf="@+id/varemail2"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/NAME2"
+      tools:ignore="HardcodedText" />
+
+
+    <TextView
+      android:id="@+id/PHONE2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="46dp"
+      android:text="PHONE NUMBER"
+      app:layout_constraintBaseline_toBaselineOf="@+id/varphone2"
+      app:layout_constraintEnd_toStartOf="@+id/varphone2"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:ignore="HardcodedText" />
+
+    <TextView
+      android:id="@+id/NAME2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="174dp"
+      android:layout_marginEnd="113dp"
+      android:text="NAME"
+      app:layout_constraintEnd_toStartOf="@+id/varname2"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="HardcodedText" />
+
+    <EditText
+      android:id="@+id/varname2"
+      android:layout_width="0dp"
+      android:layout_height="45dp"
+      android:layout_marginTop="50dp"
+      android:layout_marginEnd="23dp"
+      android:layout_marginBottom="59dp"
+      android:hint="name"
+      android:inputType="textPersonName"
+      android:minHeight="25dp"
+      app:layout_constraintBottom_toBottomOf="@+id/varemail2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/NAME2"
+      app:layout_constraintTop_toBottomOf="@+id/button2"
+      tools:ignore="HardcodedText" />
+
+    <EditText
+      android:id="@+id/varemail2"
+      android:layout_width="0dp"
+      android:layout_height="45dp"
+      android:layout_marginTop="34dp"
+      android:layout_marginEnd="23dp"
+      android:layout_marginBottom="33dp"
+      android:hint="email"
+      android:inputType="textPersonName"
+      android:minHeight="25dp"
+      app:layout_constraintBottom_toTopOf="@+id/PHONE2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/EMAILADDRESS2"
+      app:layout_constraintTop_toTopOf="@+id/NAME2"
+      tools:ignore="HardcodedText" />
+
+    <EditText
+      android:id="@+id/varphone2"
+      android:layout_width="0dp"
+      android:layout_height="45dp"
+      android:layout_marginTop="37dp"
+      android:layout_marginEnd="23dp"
+      android:hint="phone number"
+      android:inputType="textPersonName"
+      android:minHeight="25dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/PHONE2"
+      app:layout_constraintTop_toBottomOf="@+id/EMAILADDRESS2"
+      tools:ignore="HardcodedText" />
+
+    <Button
+      android:id="@+id/button2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="121dp"
+      android:layout_marginTop="51dp"
+      android:layout_marginEnd="118dp"
+      android:onClick="goMainAct"
+      android:text="Main Activity"
+      app:layout_constraintEnd_toEndOf="@+id/varname2"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
